@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&family=Rubik+Vinyl&display=swap");
+
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+  margin: 0;
+  /* background-color: #3f3f3f; */
+}
+
+/* NAVBAR STARTS */
+.nav {
+  height: 3.5rem;
+  background-color: rgba(8, 83, 221, 0.671);
+  display: flex;
+  justify-content: space-between;
+  font-family: "Rubik Vinyl", cursive;
+  color: whitesmoke;
+}
+
+.nav .left {
+  margin-left: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav .left img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+}
+.nav .left h1 {
+  margin-left: 1rem;
+}
+.nav .right {
+  margin-right: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav .right img {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.25rem;
+}
+
+/* NAVBAR ENDS */
+
+/* PHOTOSHOP STARTS */
+.photoshop-container {
+  width: 95vw;
+  height: 200vh;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  margin: 1.5rem auto;
+}
+
+.photo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 10px 2px rgb(173, 173, 173);
+  margin: 1.5rem 1rem;
+}
+/* PHOTOSHOP ENDS */
+
+/* MODAL STARTS */
+.modal {
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 55vw;
+  height: 75vh;
+  position: relative;
+  left: auto;
+  top: 10vh;
+  border-radius: 2rem;
+  padding: 1rem;
+  align-items: center;
+  background-color: rgb(228, 228, 228);
+}
+
+.modalImg {
+  width: 50vw;
+  height: 60vh;
+  border-radius: 2rem;
+}
+
+.modalFooter {
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.modalFooter .meta-data {
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-style: italic;
+  letter-spacing: 0.3rem;
+}
+.modalFooter .sizes {
+  display: flex;
+  justify-content: space-between;
+  width: 10rem;
+}
+
+.modalFooter .sizes select {
+  border-radius: 1rem;
+  padding: 0.5rem;
+  outline: none;
+}
+
+.modalFooter .priceHolder {
+  background-color: white;
+  padding: 0.1rem;
+  width: 4rem;
+  padding-left: 1rem;
+  padding: auto;
+  border-radius: 1rem;
+  outline: none;
+  border: 1px solid rgb(180, 180, 180);
+}
+/* MODAL ENDS */
+
+/* FOOTER STARTS */
+.footer {
+  height: 15rem;
+  background-color: rgb(1, 17, 48);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer .footer-left {
+  height: 12rem;
+  width: 45vw;
+  padding: 1rem 1.5rem;
+}
+
+.footer .footer-left .company-name {
+  color: white;
+  font-family: "Kanit", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.footer .footer-left .company-desc {
+  color: white;
+  font-size: 0.8rem;
+  font-style: italic;
+  margin: 1rem 0rem;
+}
+
+.footer .footer-divider {
+  height: 12rem;
+  border: 1px solid white;
+}
+.footer .footer-right {
+  height: 12rem;
+  width: 40vw;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer .footer-right .contact-us {
+  color: white;
+  font-family: "Kanit", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.footer .footer-right .social {
+  display: flex;
+  margin-top: -3rem;
+  width: 15rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer .footer-right .social img {
+  filter: invert(1);
+  width: 2rem;
+  border-radius: 50%;
+  box-shadow: 0rem 0rem 5px 2px lightblue;
+}
+
+/* FOOTER ENDS */
